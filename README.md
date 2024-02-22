@@ -10,3 +10,6 @@ Repository for Iris classification project
 
 3. Install required packages:
 `pip install -r requirements.txt`
+
+4. To open jupyter notebook from the terminal:
+`jupyter notebook`
