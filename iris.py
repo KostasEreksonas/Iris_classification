@@ -168,12 +168,12 @@ def normal_distribution(c1s, c2s, c3s, rows, cols, names):
                 arg = param4
             # x axis - range between min and max values, step - 0.01
             x_1 = np.arange(arg[0], arg[1], 0.01)
-            x_2 = np.arange(arg[4], arg[5], 0.01)
-            x_3 = np.arange(arg[8], arg[9], 0.01)
+            x_2 = np.arange(arg[2], arg[3], 0.01)
+            x_3 = np.arange(arg[4], arg[5], 0.01)
             # Normal distribution has 3 parameters - x axis range, parameter mean, parameter standard deviation
-            ax[i,j].plot(x_1, norm.pdf(x_1, arg[2], arg[3]), c='red')
-            ax[i,j].plot(x_2, norm.pdf(x_2, arg[6], arg[7]), c='green')
-            ax[i,j].plot(x_3, norm.pdf(x_3, arg[10], arg[11]), c='blue')
+            ax[i,j].plot(x_1, norm.pdf(x_1, arg[6], arg[9]), c='red')
+            ax[i,j].plot(x_2, norm.pdf(x_2, arg[7], arg[10]), c='green')
+            ax[i,j].plot(x_3, norm.pdf(x_3, arg[8], arg[11]), c='blue')
             ax[i,j].set(title=f"{' '.join(names[c].split()[:2]).title()}",
                         ylabel="Probability Density",
                         axisbelow=True)
