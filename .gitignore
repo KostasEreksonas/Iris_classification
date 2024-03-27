@@ -8,3 +8,5 @@
 !images/*
 !*.ipynb
 !*.py
+!*.fis
+!*.m
